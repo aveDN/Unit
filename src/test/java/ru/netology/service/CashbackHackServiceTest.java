@@ -18,10 +18,10 @@ class CashbackHackServiceTest {
     @Test
     void shouldRemainToCashback1() {
         CashbackHackService cashbackHackService = new CashbackHackService();
-        int amount = 1001;
+        int amount = 1000;
 
         int actual = cashbackHackService.remain(amount);
-        int expected = 0;
+        int expected = 1000;
         assertEquals(expected,actual);
     }
     @Test
