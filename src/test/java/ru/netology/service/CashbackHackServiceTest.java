@@ -13,7 +13,7 @@ class CashbackHackServiceTest {
 
         int actual = cashbackHackService.remain(amount);
         int expected = 0;
-        assertEquals(actual,expected);
+        assertEquals(expected,actual);
     }
     @Test
     void shouldRemainToCashback1() {
