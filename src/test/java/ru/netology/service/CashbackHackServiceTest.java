@@ -8,16 +8,16 @@ class CashbackHackServiceTest {
 
     @Test
     public void remainIfAmount() {
-        CashbackHackService cashbackHackService= new CashbackHackService();
-        int amount=900;
-        
-        int actual= cashbackHackService.remain(amount);
-        int expected=100;
+        CashbackHackService cashbackHackService = new CashbackHackService();
+        int amount = 1001;
+
+        int actual = cashbackHackService.remain(amount);
+        int expected = 0;
         assertEquals(actual,expected);
     }
     @Test
     void shouldRemainToCashback1() {
-         CashbackHackService cashbackHackService= new CashbackHackService();
+        CashbackHackService cashbackHackService= new CashbackHackService();
         int amount=1100;
         
         int actual= cashbackHackService.remain(amount);
@@ -33,5 +33,6 @@ class CashbackHackServiceTest {
         int expected = 1;
         assertEquals(expected,actual);
     }
+    
 
 }
